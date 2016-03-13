@@ -1,0 +1,13 @@
+.settings
+bin/
+*.class
+
+*.png
+Data/
+Img/
+Music/
+Sound/
+t1*
+t6*
+*.bin
+emp/
