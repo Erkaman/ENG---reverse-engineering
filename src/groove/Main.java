@@ -32,10 +32,20 @@ public class Main {
 	
 	static Rgb wordToRgb(short word) {
 		Rgb rgb = new Rgb();
-		rgb.r = (byte) (( ( word >> 11 ) & 0x1f ) << 3);
 	
-		rgb.g = (byte) (( ( word >> 5 ) & 0x3f ) << 2);
-		rgb.b = (byte) (( word & 0x1f ) << 3);
+		// rgb 565
+		/*
+		rgb.r = (byte) (( (word & 0xF800 ) >> 11) << 3);	
+		rgb.g = (byte) (( (word & 0x7E0 ) >> 5) << 2);
+		rgb.b = (byte) (( (word & 0x1F ) ) << 3);
+		*/
+		
+		// rgb 555
+		rgb.r = (byte) (( (word & 0x7C00 ) >> 10) << 3);	
+		rgb.g = (byte) (( (word & 0x3E0 ) >> 5) << 3);
+		rgb.b = (byte) (( (word & 0x1F ) ) << 3);
+		
+		
 		
 		return rgb;
 	}
