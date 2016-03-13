@@ -158,8 +158,12 @@ public class Main {
 		
 		
 	//	String target =  "t1l6m003.wad";
-		//String target =  "t1l1m001.wad";
+	//	String target =  "t1l1m001.wad";
+		
 		String target =  "t6l6m002.wad";
+		
+		
+		
 	//	String target =  "t1l1m001.wad";
 	//	String target =  "t1l1m002.wad";
 		//String target =  "t1l1m004.wad";
@@ -287,7 +291,7 @@ public class Main {
 			fos.write(buf);
 			fos.close();
 			
-			if(/*i == 0*/  flags == 132 ) {
+			if(/*i == 0*/  flags == 132 || flags == 135 || flags == 129 || flags==130 || flags == 133 ) {
 				
 				DataInputStream old = in;
 	
