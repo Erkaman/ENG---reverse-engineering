@@ -1,0 +1,168 @@
+* search for brender.
+
+
+* seems like engine uses tga image format.
+
+* file formats:
+.dat(model)
+.act(actor)
+.mat(material)
+
+
+# BRender Material Script
+
+material =	[
+		identifier = "BLACK PLASTIC";
+		flags = [light,smooth];
+		colour = [0,0,0];
+		ambient = 0.000000;
+		diffuse = 0.000000;
+		specular = 1.000000;
+		power = 69.309998;
+	];
+
+material =	[
+		identifier = "YELLOW PLASTIC";
+		flags = [light,smooth];
+		colour = [202,179,52];
+		ambient = 0.679216;
+		diffuse = 0.679216;
+		specular 0.741569;
+		power = 23.770000;
+	];
+	
+	
+	
+AppearedPlatform
+
+BouncingHealth
+
+RubyIdolReward
+
+Village Chapter 1
+
+this string appears a lot>
+wwwwwwwwwwwwwwcvg
+
+t1l1m001.wad
+
+
+possible file formats!
+in t1l8m005.wad we have
+stand.cxa
+potion_stand.cxa
+
+findstr /N /S "Idol" *.txt
+
+possible file:
+.ERS\TIPO\TALK.CXA
+
+
+P:\EXPORT\CHARACTERS
+
+P:/ is probably some kind of path
+
+
+In t1l6m003.wad there is a
+GROWL.WAV
+
+
+TODO:
+check if the global strings like gDialogLookHeight are ever read in and used for something.
+
+
+AA FA 10 00
+
+
+0x0010FAAA
+
+
+
+
+
+
+
+
+=====================================
+WAD FILE FORMAT
+=====================================
+
+unknown 4bytes
+OFNI = 4F 46 4E 49
+04 00 00 00
+01 00 00 00
+53 52 45 56 04 00 00 00 01 00 00 00 43 50 46 57 = SREV........CPFW
+04 00 00 00
+
+further, at end of file OFNL and CPGL is ALWAYS encountered.
+
+and file always ends with
+DNE.
+another sturcture is THGL
+
+this kind of thing is seen in every file
+.TRPS....â...EMAN........City Chapter 3.CPM
+
+EMAN, then 4bytes(these are length)
+then string of length, which always begins with 01 00 00 00
+
+
+starting from 2C, we have TEXT
+
+
+3E 7C 0F 00
+
+0F 7C 3E
+
+0x0F7C3E
+
+file structure:
+
+OFNI
+SREV
+
+CPFW
+
+TXET
+
+TNOF
+
+EMAN
+
+
+CPMS: length 000590F0
+
+CPMS begins at 0xF84A5
+
+following chunk one begins at: 0x151595
+
+CPMA(this may be vertex data)
+
+length:
+0x00004C0C
+
+begins at: 0x15159D
+
+next one begins at:
+
+0x1561A9
+
+
+TXET 
+
+len: 
+
+0x000F7C3E
+
+chunk start:
+0x2C
+
+
+
+config menu:
+t6l6m002.wad
+
+
+
+beginning of file:
+DC 8E 5E 8F DC 8E BB 8A FB FF 59 86 D7 FF 00 00
